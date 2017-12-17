@@ -17,8 +17,12 @@ export class ItemsService {
     // if ( this.items.length === 0 ) {
       this.http.get('https://portafolio-aef53.firebaseio.com/productos_idx.json')
         .subscribe( res => {
-          console.log(res.json() );
-          this.cargando = false;
+          // console.log(res.json() );
+          // setTimeout(() => {
+            this.cargando = false;
+            this.items = res.json();
+          // }, 1000);
+          
         });
     // }
 
