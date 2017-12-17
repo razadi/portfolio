@@ -17,6 +17,7 @@ import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { ItemComponent } from './component/item/item.component';
 import { RouterModule } from '@angular/router/src/router_module';
+import { SearchComponent } from './component/search/search.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { RouterModule } from '@angular/router/src/router_module';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
