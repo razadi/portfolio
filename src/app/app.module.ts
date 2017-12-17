@@ -7,6 +7,7 @@ import { app_routing } from "./app.routes";
 
 // servicios
 import { InfoService } from "./services/info.service";
+import { ItemsService } from "./services/items.service";
 
 // componentes
 import { AppComponent } from './app.component';
@@ -33,7 +34,8 @@ import { RouterModule } from '@angular/router/src/router_module';
     app_routing
   ],
   providers: [
-    InfoService
+    InfoService,
+    ItemsService
   ],
   bootstrap: [AppComponent]
 })
