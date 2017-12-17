@@ -11,11 +11,13 @@ export class SearchComponent {
   termino: string = undefined;
 
   constructor(private route: ActivatedRoute,
-    private _ps: ItemsService ) {
+    public _ps: ItemsService ) {
 
-    route.params.subscribe(parametros => {
-      this.termino = parametros['termino'];
-      _ps.busca_item(this.termino)
-    })
+      route.params.subscribe(parametros => {
+        this.termino = parametros['termino'];
+        _ps.busca_item(this.termino)
+      });
+
+    }
 
 }
